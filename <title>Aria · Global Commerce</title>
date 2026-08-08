@@ -4,7 +4,7 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#06172f">
 <meta name="description" content="Aria 的个人主页——母婴用品投资、全球批发网店与瑜伽培训学院经历。">
-<title>Aria · Global Commerce</title>
+<title>Aria | Global Commerce</title>
 <style>
 :root{--n:#06172f;--n2:#0b2a51;--b:#7eb3f2;--p:#f2f5f8;--i:#10233c;--m:#67768a;--l:#dbe2e9;--o:#ef8770;--r:26px}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--p);color:var(--i);font-family:Inter,"PingFang SC","Microsoft YaHei",system-ui,sans-serif;overflow-x:hidden}a{color:inherit;text-decoration:none}img{display:block;width:100%}.shell{width:min(1180px,calc(100% - 44px));margin:auto}.progress{position:fixed;top:0;left:0;z-index:90;height:3px;background:var(--o);width:0}.nav{position:absolute;z-index:50;top:0;left:50%;transform:translateX(-50%);height:88px;width:min(1180px,calc(100% - 44px));display:flex;align-items:center;justify-content:space-between;color:white}.brand{display:flex;align-items:center;gap:11px;font-weight:700;letter-spacing:.22em;font-size:12px}.brand b{display:grid;place-items:center;width:38px;height:38px;border:1px solid #ffffff70;border-radius:50%;font:11px Georgia}.links{display:flex;align-items:center;gap:28px;font-size:12px}.links a{opacity:.7}.links a:hover{opacity:1}.links .contact-btn{opacity:1;border:1px solid #ffffff35;padding:12px 17px;border-radius:99px}.menu{display:none;background:transparent;color:white;border:1px solid #ffffff45;border-radius:99px;padding:8px 13px}
