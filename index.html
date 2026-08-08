@@ -19,9 +19,35 @@
 @media(max-width:560px){.hero{padding:115px 20px 52px}.hero h1{font-size:45px}.slider{grid-template-columns:1fr auto}.slider small{display:none}.actions{align-items:flex-start;flex-direction:column;gap:10px}.meta{gap:28px}.tag{left:-10px;bottom:25px}.section{padding:78px 0}.head{margin-bottom:37px}.head h2{font-size:43px}.facts,.interests{grid-template-columns:1fr}.fact{min-height:185px}.job{grid-template-columns:1fr;gap:10px;padding-inline:8px}.chips{flex-wrap:wrap}.interest{min-height:240px}.controls{justify-self:start}.bigquote br{display:none}.call{gap:35px}footer{align-items:flex-start;flex-direction:column;gap:18px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before{animation-duration:.01ms!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
 </style>
+<style>
+.opening.angel{background:linear-gradient(135deg,#fff9fa 0%,#fce9ed 52%,#f5d6de 100%);color:#63394a}
+.opening.angel:before{width:62vw;height:62vw;right:-18vw;top:-25vw;background:radial-gradient(circle,#e9a9b955,transparent 66%)}
+.opening.angel:after{width:48vw;height:48vw;background:radial-gradient(circle,#fff 0%,transparent 68%)}
+.angel .opening-grid{opacity:.2;background-image:linear-gradient(#c986971a 1px,transparent 1px),linear-gradient(90deg,#c986971a 1px,transparent 1px)}
+.angel-layout{position:relative;z-index:2;width:min(1180px,calc(100% - 56px));display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:center}
+.angel-copy{position:relative;text-align:left}
+.angel-mark{display:flex;align-items:center;gap:12px;margin-bottom:35px;color:#9b6274;font-size:9px;font-weight:700;letter-spacing:.28em;animation:rise .8s .1s both}
+.angel-mark b{display:grid;place-items:center;width:46px;height:46px;border:1px solid #bd8394;border-radius:50%;font:16px Georgia;color:#9c5b70}
+.angel-title{margin:0!important;color:#63394a;font:400 clamp(52px,6vw,92px)/.9 Georgia,"Times New Roman",serif!important;letter-spacing:-.04em!important;animation:rise .9s .25s both!important}
+.angel-title em{display:block;margin-top:16px;color:#b56f84;font-size:.46em;font-style:italic;letter-spacing:.02em}
+.angel-copy>p{max-width:500px;margin:28px 0 0!important;color:#8a6270!important;font:14px/1.9 Inter,"PingFang SC",sans-serif!important;letter-spacing:.02em!important;animation:rise .9s .45s both!important}
+.angel-tags{display:flex;gap:10px;margin-top:30px;animation:rise .9s .6s both}
+.angel-tags span{padding:9px 13px;border:1px solid #c98fa0;border-radius:99px;color:#976173;font-size:8px;letter-spacing:.14em}
+.medical-collage{position:relative;height:min(610px,70vh);animation:rise 1s .35s both}
+.medical-photo{position:absolute;overflow:hidden;border:8px solid #fff;border-radius:160px 160px 28px 28px;background:#efd8df;box-shadow:0 30px 70px #8f53672c}
+.medical-photo img{width:100%;height:100%;object-fit:cover}
+.medical-photo.main{z-index:3;width:58%;height:88%;right:10%;top:3%;animation:floatPhoto 4.8s ease-in-out infinite}
+.medical-photo.side-a{z-index:2;width:35%;height:47%;left:0;top:9%;border-radius:100px 100px 22px 22px;animation:floatPhoto 5.4s .5s ease-in-out infinite reverse}
+.medical-photo.side-b{z-index:4;width:37%;height:39%;left:7%;bottom:2%;border-radius:22px 22px 90px 90px;animation:floatPhoto 5s 1s ease-in-out infinite}
+.medical-cross{position:absolute;z-index:5;right:0;bottom:8%;display:grid;place-items:center;width:94px;height:94px;border-radius:50%;background:#fff;color:#b56f84;box-shadow:0 20px 50px #9355682b;font:38px Georgia;animation:pulseCross 2s ease-in-out infinite}
+.angel .opening-swipe{color:#9c6677}.angel .opening-swipe b{color:#ad6c80}.angel .opening-status{color:#a87988}.angel .opening-status:before{background:#d78fa4;box-shadow:0 0 0 5px #d78fa427}
+@keyframes floatPhoto{50%{transform:translateY(-10px)}}@keyframes pulseCross{50%{transform:scale(1.06);box-shadow:0 24px 60px #9355683d}}
+@media(max-width:850px){.angel-layout{grid-template-columns:1fr;gap:28px;padding-top:30px}.angel-copy{text-align:center}.angel-mark,.angel-tags{justify-content:center}.angel-copy>p{margin-inline:auto!important}.medical-collage{height:37vh;min-height:280px}.medical-photo.main{width:48%;right:25%;height:100%}.medical-photo.side-a{width:29%;left:8%}.medical-photo.side-b{width:29%;left:auto;right:7%}.medical-cross{width:65px;height:65px;right:11%;font-size:27px}.opening-status{display:none}}
+@media(max-width:560px){.angel-layout{width:calc(100% - 32px)}.angel-mark{margin-bottom:20px}.angel-title{font-size:48px!important}.angel-copy>p{margin-top:19px!important;font-size:12px!important}.angel-tags{margin-top:18px;flex-wrap:wrap}.medical-collage{height:32vh;min-height:235px}.medical-photo{border-width:5px}.medical-photo.main{width:54%;right:23%}.opening-swipe{bottom:15px}}
+</style>
 </head>
 <body class="loading">
-<div class="opening" id="opening" aria-label="Aria 网站开场动画"><div class="opening-grid"></div><div class="opening-inner"><div class="opening-mark">AR</div><div class="opening-line"></div><h1>ARIA</h1><p>GLOBAL COMMERCE · SINGAPORE</p></div><button class="opening-swipe" id="enterSite" type="button"><b>↑</b><span>向上滑动进入</span></button><span class="opening-status">PORTFOLIO 2026</span></div>
+<div class="opening angel" id="opening" aria-label="Angel Medical opening cover"><div class="opening-grid"></div><div class="angel-layout"><div class="angel-copy"><div class="angel-mark"><b>AM</b><span>ANGEL MEDICAL</span></div><h1 class="angel-title">Care with<br>Compassion.<em>Health with Purpose.</em></h1><p>Where professional care meets warmth, trust and a genuine respect for every life.</p><div class="angel-tags"><span>CARE</span><span>TRUST</span><span>WELLNESS</span></div></div><div class="medical-collage"><figure class="medical-photo side-a"><img src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?auto=format&amp;fit=crop&amp;w=700&amp;q=85" alt="Medical care"></figure><figure class="medical-photo main"><img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&amp;fit=crop&amp;w=1000&amp;q=88" alt="Professional female doctor"></figure><figure class="medical-photo side-b"><img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&amp;fit=crop&amp;w=700&amp;q=85" alt="Healthcare professional"></figure><span class="medical-cross">+</span></div></div><button class="opening-swipe" id="enterSite" type="button"><b>↑</b><span>SWIPE UP TO ENTER</span></button><span class="opening-status">CARE · COMPASSION · TRUST</span></div>
 <div class="progress" id="progress"></div>
 <header class="nav"><a class="brand" href="#"><b>AR</b> ARIA</a><button class="menu" aria-expanded="false">菜单</button><nav class="links"><a href="#about">关于我</a><a href="#work">工作经历</a><a href="#interests">兴趣爱好</a><a href="#values">我的看法</a><a class="contact-btn" href="#contact">联系我 ↗</a></nav></header>
 <main>
